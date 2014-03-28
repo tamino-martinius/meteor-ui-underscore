@@ -3,7 +3,7 @@
    "description": "Port of some underscore-js functions for meteor ui.",
    "homepage": "https://github.com/Zaku-eu/meteor-ui-underscore",
    "author": "Tamino Martinius <dev@zaku.eu> (http://zaku.eu)",
-   "version": "0.2.1",
+   "version": "0.2.2",
    "git": "https://github.com/Zaku-eu/meteor-ui-underscore.git",
    "packages": {}
 }

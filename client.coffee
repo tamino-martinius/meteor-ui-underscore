@@ -6,6 +6,13 @@ UI.registerHelper "$gte", (a, b) -> a >= b
 UI.registerHelper "$lt" , (a, b) -> a <  b
 UI.registerHelper "$lte", (a, b) -> a <= b
 
+#--- Conditional
+UI.registerHelper "$sw" , (a, bs..., options) ->
+  return bs[0] if a is true and bs[0]?
+  return bs[1] if a is false and bs[1]?
+  return bs[a] if _.isNumber a and bs[a]?
+  ""
+
 #--- Collections
 UI.registerHelper "$contains", (a, bs..., options) -> _.contains _.flatten(bs), a
 UI.registerHelper "$indexOf" , (a, bs..., options) -> _.indexOf  _.flatten(bs), a
