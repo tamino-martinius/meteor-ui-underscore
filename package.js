@@ -1,17 +1,17 @@
 Package.describe({
   name: 'zaku:ui-underscore',
   summary: 'Port of some underscore-js functions for meteor ui.',
-  version: '0.9.0',
-  git: 'https://github.com/Zaku-eu/meteor-ui-underscore.git'
+  version: '0.9.1',
+  git: 'https://github.com/tamino-martinius/meteor-ui-underscore.git'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.0');
   api.use([
-    'coffeescript',
+    'coffeescript@1.0.17',
     'standard-app-packages'
   ],'client');
- 
+
   api.add_files('zaku:ui-underscore.coffee', 'client');
 });
 
